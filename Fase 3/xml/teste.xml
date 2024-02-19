@@ -1,0 +1,56 @@
+<world> 
+    <window width="512" height="512" />
+    <camera> 
+	    <position x="4" y="4" z="6" />
+	    <lookAt x="0" y="0" z="0" />
+	    <up x="0" y="1" z="0" /> <!-- optional, use these values as default-->
+        <projection fov="60" near="1" far="1000" /> <!-- optional, use these values as default-->
+    </camera>
+	<group> 
+		<transform>
+             <translate time="10">
+                 <point x="11.25" y="0" z="8.0"/>
+                 <point x="17.351049646137003" y="0" z="7.308363661140807"/>
+                 <point x="22.39717238216091" y="0" z="5.353044850870866"/>
+                 <point x="25.515847744427305" y="0" z="2.4721359549995796"/>
+                 <point x="26.167828430524104" y="0" z="-0.8362277061412267"/>
+                 <point x="24.24038105676658" y="0" z="-3.9999999999999982"/>
+                 <point x="20.066778784387097" y="0" z="-6.472135954999579"/>
+                 <point x="14.368675362266396" y="0" z="-7.825180805870445"/>
+                 <point x="8.131324637733615" y="0" z="-7.8251808058704455"/>
+                 <point x="2.433221215612905" y="0" z="-6.4721359549995805"/>
+                 <point x="-1.7403810567665765" y="0" z="-4.0000000000000036"/>
+                 <point x="-3.6678284305241" y="0" z="-0.8362277061412339"/>
+                 <point x="-3.0158477444273046" y="0" z="2.472135954999578"/>
+                 <point x="0.10282761783908079" y="0" z="5.353044850870862"/>
+                 <point x="5.148950353862986" y="0" z="7.308363661140804"/>
+             </translate>
+			 <rotate angle="160" x="0" y="1" z="0" />
+		</transform>
+		<group>
+			<transform>
+				<rotate angle="-200" x="1" y="1" z="0" />
+				<translate x="-3" y="-0.5" z="-8" />
+				<scale x="0.5" y="0.5" z="0.5" />
+			</transform>   
+			<models> 
+				<model file="cometa.3d" /> <!-- generator patch cometa.patch 10 cometa.3d -->
+			</models>
+		</group>
+		<group>
+			<transform>
+				<translate x="-1.4" y="0" z="0.7" />
+				<rotate angle="-90" x="1" y="0" z="0" /> 
+				<rotate angle="90" x="0" y="0" z="1" /> 
+				<translate x="-1.4" y="-1.65" z="1.1" />
+				<rotate angle="-15" x="0" y="0" z="1" /> 
+				<rotate angle="15" x="1" y="0" z="0" /> 
+				<rotate angle="9" x="0" y="1" z="0" /> 
+				<scale x="0.1" y="0.1" z="0.1" />
+			</transform>
+			<models> 
+				<model file="dumbo.3d" /> <!-- generator patch dumbo.patch 30 dumbo.3d -->
+			</models>
+		</group>
+ 	</group>
+</world>
